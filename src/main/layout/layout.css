@@ -11,14 +11,14 @@ div.imageView{
   position:   fixed; /*Fixed will keep the image "stablilized"*/
 }
 
-#b
+#startButton
 {
 	position: fixed;
-	z-index: 11;
+	z-index: 9996;
 
 }
 
-.myImage
+.imageDisplay
 { width:      auto;
   height:     auto;
   max-height : 80%;
