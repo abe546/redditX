@@ -1,0 +1,36 @@
+div.imageView{
+
+  background: #000;
+  width:      auto;
+  height:     650px;
+  max-width : auto;
+  max-height : 650px;
+  z-index:    10;
+  top:        0;
+  left:       0;
+  position:   fixed; /*Fixed will keep the image "stablilized"*/
+}
+
+#b
+{
+	position: fixed;
+	z-index: 11;
+
+}
+
+.myImage
+{ width:      auto;
+  height:     auto;
+  max-height : 80%;
+  max-width : 80%;
+
+  bottom : 8.5%;
+  position:   fixed;
+	background : black;
+	outline: none;
+	 z-index:    100;
+
+	 left : 28px;
+
+
+}
