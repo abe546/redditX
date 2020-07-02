@@ -20,7 +20,7 @@ function main()
 //Prepend a button to the body of the html page, this button can be used to toggle (enable or disable) the application
 function prependStartButton()
 {
-  var $input = $('<input type="button" value="open" id="startButton" />');
+  var $input = $('<input type="button" value="On" id="startButton" />');
      $input.prependTo($("body"));
 }
 
@@ -35,12 +35,15 @@ function assignStartButton()
        {
          //Is not enabled, make it enabled
          localStorage.setItem(enabled, 1);
+         $("#startButton").prop("value","Off");
          console.log("IS ENABLED : "+isButtonEnabled());
        }
       else if( isButtonEnabled() )
       {
         //Is enabled, make it disabled
         localStorage.setItem(enabled, 0);
+        $("#startButton").prop("value","On");
+
         console.log("IS DISABLED : "+isButtonEnabled());
       }
     }
